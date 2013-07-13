@@ -46,8 +46,8 @@
 
 (define prudent-troll-bot
   (make-quine-bot
-                           `(lambda (play opponent) (coop-if (and (defect? (play (make-mask play source ',coop-bot) opponent source))
-                                                                 (coop? (play (make-mask play source ',defect-bot) opponent source)))))))
+   `(lambda (play opponent) (coop-if (and (defect? (play (make-mask play source ',coop-bot) opponent source))
+                                          (coop? (play (make-mask play source ',defect-bot) opponent source)))))))
 
 ;;; Now here's optimask implemented using the eval heirarchy:
 
